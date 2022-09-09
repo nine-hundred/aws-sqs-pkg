@@ -1,0 +1,12 @@
+{
+  "QueueConfigs": [
+    {
+      "QueueName": "your first queue name",
+      "QueueUrl": "your queue url"
+    },
+    {
+      "QueueName": "your second queue name",
+      "QueueUrl": "your queue url"
+    }
+  ]
+}
