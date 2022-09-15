@@ -99,6 +99,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-*.json
+./senders/*.json
 .idea/*
 
