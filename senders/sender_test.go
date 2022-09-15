@@ -6,15 +6,15 @@ import (
 )
 
 func TestMessage_Send(t *testing.T) {
-	t.Run("", func(t *testing.T) {
+	t.Run("send test", func(t *testing.T) {
 		client, err := GetMessageSender("your first queue name")
 		assert.Nil(t, err)
 
 		err = client.SetMessage(
 			NewMessageBuilder().
-				SetTitle("").
-				SetAuthor(":").
-				SetBody(""),
+				SetTitle("this is title").
+				SetAuthor("this is author").
+				SetBody("this is body"),
 		).Send()
 		assert.Nil(t, err)
 	})
