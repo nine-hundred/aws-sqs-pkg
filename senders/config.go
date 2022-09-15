@@ -24,6 +24,6 @@ func init() {
 	viper.UnmarshalKey("QueueConfigs", &QueueConfigs)
 
 	for _, config := range QueueConfigs {
-		Register(&MessageClient{config})
+		Register(&MessageSender{QueueConfig: config})
 	}
 }
